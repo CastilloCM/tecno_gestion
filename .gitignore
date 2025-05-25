@@ -1,0 +1,11 @@
+/includes/database.php
+.env
+
+
+#logs y cache
+.logs
+.cache
+
+#dependencias
+/vendor/
+/node_modules/
