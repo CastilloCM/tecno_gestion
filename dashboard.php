@@ -12,19 +12,8 @@ if (!isset($_SESSION['usuario'])) {
     <meta charset="UTF-8">
     <title>Panel Principal - TecnoSoluciones</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color:rgb(210, 192, 204);
-        }
-        .dashboard-card {
-            max-width: 600px;
-            width: 100%;
-        }
-        .btn-lg {
-            padding: 15px 25px;
-            font-size: 1.2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="css/estilo.css" />
+   
 </head>
 <body class="d-flex align-items-center justify-content-center vh-100">
 
@@ -36,7 +25,8 @@ if (!isset($_SESSION['usuario'])) {
         <div class="d-grid gap-3 mb-4">
             <a href="clientes.php" class="btn btn-outline-primary btn-lg">Gestión de Clientes</a>
             <a href="proyectos.php" class="btn btn-outline-success btn-lg">Gestión de Proyectos</a>
-            <a href="reporte_pdf.php" class="btn btn-outline-info btn-lg">Generar Reportes</a>
+            <a href="generar_reportes.php" class="btn btn-outline-info btn-lg">Generar Reportes</a>
+
         </div>
 
         <a href="logout.php" class="btn btn-danger btn-lg">Cerrar sesión</a>

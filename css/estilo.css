@@ -1,39 +1,66 @@
+/* Base general */
 body {
-    background-color: #f4f6f8;
-    font-family: 'Segoe UI', sans-serif;
-}
-.card {
-    border: none;
-}
-
-
-body {
-    background-color: #f0f2f5;
+    background: linear-gradient(to right, rgb(235, 249, 244), rgb(246, 245, 246));
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    color: #333;
 }
 
-.login-container {
-    max-width: 480px;
-    margin: 100px auto;
-    padding: 50px 40px;
-    background: #fff;
+/* Estilo general para tarjetas */
+.card, .login-card, .dashboard-card {
+    background-color: #ffffff;
+    border: none;
     border-radius: 15px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Login específico */
+.login-container, .login-card {
+    max-width: 480px;
+    margin: 100px auto;
+    padding: 40px 30px;
+}
+
+/* Estilo para encabezados dentro del login */
 .login-container h2 {
     margin-bottom: 30px;
 }
 
+/* Botón primario */
 .btn-primary {
-    background-color: #0d6efd;
+    background-color: #6a11cb;
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: #0b5ed7;
+    background-color: #5011a9;
 }
 
+/* Botón alternativo */
+.btn-success {
+    background-color: #aa588a;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.btn-success:hover {
+    background-color: #157347;
+}
+
+/* Botón grande para dashboards */
+.btn-lg {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+}
+
+/* Formulario */
+.form-control:focus {
+    border-color: #c795be;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Enlaces */
 a {
     color: #0d6efd;
     text-decoration: none;
@@ -45,26 +72,16 @@ a:hover {
 
 
 
-body {
-      background: linear-gradient(to right,rgb(235, 249, 244),rgb(193, 152, 181));
-      height: 100vh;
-    }
 
-    .login-card {
-      max-width: 450px;
-      margin: auto;
-      margin-top: 80px;
-      background-color: white;
-      border-radius: 15px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-      padding: 40px;
-    }
+.top-bar {
+            padding: 10px 0;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
 
-    .btn-primary {
-      background-color: #6a11cb;
-      border: none;
-    }
+        .top-bar .btn {
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
 
-    .btn-primary:hover {
-      background-color: #5011a9;
-    }
