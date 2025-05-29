@@ -21,7 +21,8 @@ if (!isset($_SESSION['usuario'])) {
             Selecciona el tipo de reporte que deseas generar en PDF.
         </p>
 
-        <div class="d-grid gap-3">
+        <!-- Botones grandes para reportes -->
+        <div class="d-grid gap-3 mb-4">
             <a href="reporte_pdf.php" class="btn btn-outline-primary btn-lg">
                 📄 Reporte de Clientes
             </a>
@@ -29,8 +30,20 @@ if (!isset($_SESSION['usuario'])) {
                 📊 Reporte de Proyectos
             </a>
         </div>
+
+        <!-- Botones pequeños al final -->
+        <div class="d-flex justify-content-center gap-2">
+            <a href="dashboard.php" class="btn btn-outline-secondary btn-sm">
+                🏠 Menú Principal
+            </a>
+            <a href="logout.php" class="btn btn-outline-danger btn-sm">
+                🔒 Cerrar sesión
+            </a>
+        </div>
     </div>
 </div>
 </body>
 </html>
+
+
 

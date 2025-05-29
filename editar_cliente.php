@@ -15,7 +15,7 @@ if (!isset($_GET['id'])) {
 $id = $_GET['id'];
 
 // Obtener datos del cliente
-$stmt = $conn->prepare("SELECT * FROM clientes WHERE id = ?");
+$stmt = $pdo->prepare("SELECT * FROM clientes WHERE id = ?");
 $stmt->execute([$id]);
 $cliente = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -30,11 +30,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $correo = trim($_POST['correo']);
     $telefono = trim($_POST['telefono']);
 
-    // Validar campos (puedes personalizar más esta parte)
+    // Validar campos
     if ($nombre === '' || $correo === '' || $telefono === '') {
         $error = "Todos los campos son obligatorios.";
     } else {
-        $stmt = $conn->prepare("UPDATE clientes SET nombre = ?, correo = ?, telefono = ? WHERE id = ?");
+        $stmt = $pdo->prepare("UPDATE clientes SET nombre = ?, correo = ?, telefono = ? WHERE id = ?");
         $stmt->execute([$nombre, $correo, $telefono, $id]);
         header("Location: clientes.php");
         exit;
@@ -84,3 +84,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </body>
 </html>
+

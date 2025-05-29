@@ -1,14 +1,15 @@
 /* Base general */
 body {
-    background: linear-gradient(to right, rgb(235, 249, 244), rgb(246, 245, 246));
+    background: linear-gradient(to right, rgb(229, 230, 229), rgb(209, 200, 209));
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
     color: #333;
 }
 
+
 /* Estilo general para tarjetas */
 .card, .login-card, .dashboard-card {
-    background-color: #ffffff;
+    background-color: #e8e5e8;
     border: none;
     border-radius: 15px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
